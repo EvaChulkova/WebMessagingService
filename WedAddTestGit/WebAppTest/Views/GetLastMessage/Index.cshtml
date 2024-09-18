@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="text-center">
+    <table >
+        <tr>
+            <th>ID</th>
+            <th>Message</th>
+            <th>Date and time</th>
+        </tr>
+        @foreach(var d in Model)
+        {
+            <tr>
+                <th>@d.Id</th>
+                <th>@d.Message</th>
+                <th>@d.DateTime</th>
+            </tr>
+        }
+    </table>
+    
+
+</div>
